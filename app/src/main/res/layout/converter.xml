@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConvertActivity"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/tvConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/converter_app"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kmPrompt"
+        android:layout_below="@id/tvConverter"
+        android:layout_marginTop="57dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/txtKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@id/tvKm"
+        android:layout_below="@id/tvConverter"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/miles"
+        android:layout_below="@id/tvKm"/>
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvMiles"
+        android:layout_below="@id/txtKm"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="48dp"/>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMiles"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/convert"
+       />
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quit"
+        android:layout_below="@id/tvResults"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"/>
+
+
+</RelativeLayout>

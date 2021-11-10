@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="welcome">Welcome To Converter App</string>
+    <string name="open">Open Converter</string>
+    <string name="converter_app">Converter App</string>
+    <string name="kmPrompt">Enter KM</string>
+    <string name="miles">Miles</string>
+    <string name="convert">Convert</string>
+    <string name="quit">Quit</string>
+</resources>
